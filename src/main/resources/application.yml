@@ -11,8 +11,8 @@ spring:
   jpa:
     show-sql: false
 #    generate-ddl: false
-    #hibernate:
-      #ddl-auto: create
+    hibernate:
+      ddl-auto: create
     database: postgresql
 #      dialect: org.hibernate.dialect.MySQL5Dialect
 
