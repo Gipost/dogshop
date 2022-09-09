@@ -1,0 +1,20 @@
+{
+  "name": "dog-shop",
+  "version": "1.0.0",
+  "description": "Dog shop",
+  "main": "app.js",
+  "dependencies": {
+    "ap": "^0.2.0",
+    "aplayer": "^1.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhulinn/Online-Shopping-Store.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
