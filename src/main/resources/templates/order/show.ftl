@@ -3,7 +3,7 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Order Detail</h1>
+    <h1 align="center" class="display-4 mb-5">Детали заказа</h1>
 
     <table class="table table-striped text-center">
         <thead>
