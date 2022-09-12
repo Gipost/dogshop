@@ -29,10 +29,10 @@
             <td class="align-middle">${statusArray[productInfo.getProductStatus()]}</td>
             <td class="align-middle">
                 <a style="display: block" href="/seller/product/${productInfo.getProductId()}/edit">
-                    Edit</a>
+                    Редактировать</a>
                 <#if currentUser.role=="ROLE_MANAGER">
                     <a style="display: block" href="/seller/product/${productInfo.getProductId()}/delete">
-                        Remove</a>
+                        Удалить</a>
                 </#if>
 
             </td>
