@@ -3,7 +3,7 @@
 <body>
 <div class="container  ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Product Detail</h1>
+    <h1 align="center" class="display-4 mb-5">Детали</h1>
     <div class="row text-center justify-content-center">
         <div class="col-lg-6 ">
             <div class="card mb-4 ">
@@ -13,17 +13,17 @@
                     <form method="post" action="/cart">
                         <div class="text-left">
                             <input hidden name="productId" value="${productInfo.getProductId()}">
-                            <p class="card-test"><strong>Description: </strong>${productInfo.getProductDescription()}
+                            <p class="card-test"><strong>Описание: </strong>${productInfo.getProductDescription()}
                             </p>
                             <p class="card-text">
-                                <strong>Price: </strong>
+                                <strong>цена: </strong>
                                 <label id="price"
                                        value="${productInfo.getProductPrice()}">${productInfo.getProductPrice()?string.currency}</label>
                             </p>
-                            <p class="card-text"><strong>Stock: </strong>${productInfo.getProductStock()}</p>
+                            <p class="card-text"><strong>в наличии: </strong>${productInfo.getProductStock()}</p>
 
                             <label class="card-text" for="quantity">
-                                <strong>Quantity: </strong>
+                                <strong>количество: </strong>
                             </label>
                             <input type="number"
                                    id="quantity"
@@ -32,14 +32,14 @@
                                    min="1"
                                    max="${productInfo.getProductStock()}"
                                    oninput="chageSubtotal()">
-                            <p class="card-text"><strong>Subtotal: </strong>
+                            <p class="card-text"><strong>всего: </strong>
                             <#--For JavaScript inHTML-->
                                 <label id="subtotal">${(productInfo.getProductPrice())?string.currency}</label>
                             </p>
                         </div>
                         <button type="submit"
                                 class="btn btn-primary btn-lg <#if productInfo.getProductStatus()==1>disabled</#if>">
-                            Add to Cart
+                            Добавить в корзину
                         </button>
                     </form>
 
