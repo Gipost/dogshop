@@ -59,11 +59,11 @@
         <ul class="pagination justify-content-end">
                     <#if currentPage lte 1>
                            <li class="page-item disabled">
-                               <a class="page-link" href="#">Previous</a>
+                               <a class="page-link" href="#">Предыдущая</a>
                            </li>
                     <#else>
                            <li class="page-item">
-                               <a class="page-link" href="?page=${currentPage - 1}&size=${size}">Previous</a>
+                               <a class="page-link" href="?page=${currentPage - 1}&size=${size}">Предыдущая</a>
                            </li>
                     </#if>
 
@@ -82,11 +82,11 @@
 
                     <#if currentPage gte orders.getTotalPages()>
                             <li class="page-item disabled">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#">Следующая</a>
                             </li>
                     <#else>
                             <li class="page-item">
-                                <a class="page-link" href="?page=${currentPage + 1}&size=${size}">Next</a>
+                                <a class="page-link" href="?page=${currentPage + 1}&size=${size}">Следующая</a>
                             </li>
                     </#if>
         </ul>
